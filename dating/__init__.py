@@ -15,6 +15,7 @@ from flask_socketio import SocketIO, emit
 from Config import Config
 
 app = Flask(__name__)
+app.config.from_object(Config)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 bcrypt = Bcrypt(app)
@@ -25,7 +26,7 @@ socketio = SocketIO(app)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 login_manager.login_message_category = 'info'
-app.config.from_object(Config)
+
 mail = Mail(app)
 
 
