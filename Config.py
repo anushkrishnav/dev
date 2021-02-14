@@ -10,7 +10,7 @@ class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or "secret_string"
     ENV = os.getenv('FLASK_ENV', default='production')
     DEBUG = ENV == 'development'
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URLS') or  'sqlite:///site.db'
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or  'sqlite:///site.db'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
     MAIL_SERVER = os.environ.get('MAIL_SERVER')
     MAIL_PORT = os.environ.get('MAIL_PORT')
