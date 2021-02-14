@@ -106,7 +106,12 @@ def message(recipient):
 
 	return render_template('send_message.html', recipient=recipient, title="Chat with " + recipient.title() , user=user, form=form, messages=messages, recent_chats=recent_chats)
 
-
+@app.route('/chat')
+def chat():
+	return render_template('chat.html')
+@app.route('/quiz')
+def quiz():
+	return render_template('quiz.html')
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -121,7 +126,7 @@ def register():
 		db.session.commit()
 		flash(f'Account Created for {form.username.data}! You can now log in', 'success')
 		return redirect(url_for('login'))
-	return render_template('register.html', title="Register", form=form)
+	return render_template('re.html', title="Register", form=form)
 
 
 @app.route('/login', methods=['GET', 'POST'])

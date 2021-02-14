@@ -1,2 +1,12 @@
 .env
 .gitignore
+my-safe-directory/ca.key
+cockroach-v20.2.4.linux-amd64/lib/libgeos.so
+cockroach-v20.2.4.linux-amd64/lib/libgeos_c.so
+cockroach-v20.2.4.linux-amd64/cockroach
+certs/node.key
+certs/node.crt
+certs/client.root.key
+certs/client.root.crt
+certs/cc-ca.crt
+certs/ca.crt
