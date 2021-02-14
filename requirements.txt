@@ -29,6 +29,7 @@ Mako==1.1.4
 Markdown==3.2.1
 MarkupSafe==1.1.1
 Pillow==7.1.0
+psycopg2==2.8.6
 pycparser==2.19
 python-dateutil==2.8.0
 python-dotenv==0.15.0
