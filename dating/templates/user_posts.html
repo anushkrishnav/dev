@@ -237,7 +237,7 @@ section .btn {
       <div class="profile-user-settings" style="display:flex;">
 
         <h2 class="profile-user-name">{{user.username.title()}}
-          {% if user.username in ["harun" , "bambi"] %}
+          {% if user.username in ["harun" , "Dev Dates"] %}
           <img src="{{ url_for('static', filename='resources/' + 'verified.png') }}" style="width:20px;height:20px;margin-left: -5px;" title="Verified"> 
           {% endif %}
           {% if user.birthday() %}
@@ -301,7 +301,7 @@ section .btn {
 
             {% if user.username == 'harun' %}
               <code class="d-none d-lg-block">
-              <a class="badge badge-warning" style="color:#000;">💦Founder, Bambi</a> 
+              <a class="badge badge-warning" style="color:#000;">💦Founder, Dev Dates</a> 
               <a class="badge badge-primary" style="color:#000;">💻code</a> 
               <a class="badge badge-danger" style="color:#000;">🚊travel</a> 
               <a class="badge badge-success" style="color:#000;">🎱billiards</a> 
@@ -501,7 +501,7 @@ section .btn {
         <p class="card-text">Looking for your classmates or wanna make new friends? Sign in and get started!</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted logo">BAMBI</small>
+        <small class="text-muted logo">Dev Dates</small>
       </div>
     </div>
     {% else %}
@@ -512,7 +512,7 @@ section .btn {
         <p class="card-text">Looking for your classmates or wanna make new friends? Sign in and get started!</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted logo">BAMBI</small>
+        <small class="text-muted logo">Dev Dates</small>
       </div>
     </div>
     {% endif %}

@@ -294,8 +294,8 @@ def admin_delete_account(username):
 
 def send_reset_email(user):
 	token = user.get_reset_token()
-	msg = Message('Password Reset Request', sender="BAMBI", recipients=[user.email])
-	msg.body = f"""To reset your Bambi Password, visit the following link:
+	msg = Message('Password Reset Request', sender="Dev Dates", recipients=[user.email])
+	msg.body = f"""To reset your Dev Dates Password, visit the following link:
 
 	{url_for('reset_token', token=token, _external=True)}
 

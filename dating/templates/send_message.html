@@ -51,7 +51,7 @@
       <h3 style="text-align:center;margin-left:-50px;">
         <img src="{{ url_for('static', filename='profile_pics/' + user.dp) }}" alt="default profile" style="width:40px;height:40px;border-radius:50%;">
         <a href="{{url_for('user_posts', username=recipient)}}" style="color:#fff;">{{user.username.title()}}
-             {% if recipient in ["harun" , "bambi"] %}
+             {% if recipient in ["harun" , "Dev Dates"] %}
              <img src="https://image.flaticon.com/icons/svg/1271/1271380.svg" style="width:17px;height:17px;margin-left: -5px;">
              {% endif %}
            </a></h3>
